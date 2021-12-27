@@ -19,10 +19,39 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent;
+    background-color: lightskyblue;
 }
 
 .app {
     margin-top: 2rem;
     display: grid;
     justify-items: center;
+}
+
+.AlignMe {
+    display:flex;
+    align-content:center;
+    justify-content:center;
+    min-width: 400px;
+}
+
+.buttonDiv {
+    display:flex;
+    justify-content:center;
+    align-self: center;
+    min-width: 400px;
+    gap: 10px;
+
+}
+
+.buttonDiv > .buttonL:not(button) ::cue(onClick) {
+    justify-content:flex-start;
+}
+
+.buttonDiv > .buttonC:not(button) {
+    justify-content:center;
+}
+
+.buttonDiv > .buttonR:not(button) {
+    justify-content:flex-end;
 }
