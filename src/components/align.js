@@ -7,19 +7,28 @@ export default class AlignSection extends Component {
     constructor() {
         super()
         this.state = {
-            
+            heading: "Align-Me",
+
         }
+        this.handleLeft = this.handleLeft.bind(this)
     }
+
+    handleLeft() {
+        this.setState({
+            textAlign:'left'
+        })
+    }
+
     render() {
     
         return(
             <div>
                 <div className='AlignMe'>
-                    <h2 id='alignTextHere'>Align Me</h2>
+                    <h2 style={{textAlign:'center' }}>{this.state.heading}</h2>
                 </div>
 
                 <div className='buttonDiv'>
-                <button className='buttonL' >Left</button>
+                <button onCLick={this.handleLeft} >Left</button>
                 <button className='buttonC' >Center</button>
                 <button className='buttonR' >Right</button>
 

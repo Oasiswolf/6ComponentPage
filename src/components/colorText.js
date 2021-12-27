@@ -31,6 +31,7 @@ export default class ColorMeText extends Component {
     render() {
         return(
             <div>
+                <hr />
                 <h2 style = {{ color: this.state.color }}>{this.state.heading}</h2>
                 <form onSubmit={this.handleSubmit}>
                     <input name="colorInput" type="color" onChange={this.handleChange} />
@@ -38,6 +39,7 @@ export default class ColorMeText extends Component {
                     <button type="submit" >Submit</button>
 
                 </form>
+                <hr />
             </div>
         )
     }

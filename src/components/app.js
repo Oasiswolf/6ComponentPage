@@ -4,6 +4,7 @@ import AlignSection from './align';
 import HideMe from './hideMe';
 import Incrementor from './incrementor'
 import ColorMeText from './colorText';
+import ToggleClock from './toggleClock';
 
 export default class App extends Component {
   render() {
@@ -20,6 +21,8 @@ export default class App extends Component {
         <Incrementor />
         <hr />
         <ColorMeText />
+        <hr />
+        <ToggleClock />
       </div>
     );
   }
