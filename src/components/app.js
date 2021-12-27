@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 import AlignSection from './align';
 import HideMe from './hideMe';
-
+import Incrementor from './incrementor'
+import ColorMeText from './colorText';
 
 export default class App extends Component {
   render() {
@@ -15,6 +16,10 @@ export default class App extends Component {
         <HideMe />
         <hr />
 
+        <hr />
+        <Incrementor />
+        <hr />
+        <ColorMeText />
       </div>
     );
   }

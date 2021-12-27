@@ -1,10 +1,15 @@
-import React, { Component, useState } from 'react'
+import React, { Component } from 'react'
 
 // Have someText to align done
 // get it to align left, center, and right
 
 export default class AlignSection extends Component {
-    
+    constructor() {
+        super()
+        this.state = {
+            
+        }
+    }
     render() {
     
         return(
